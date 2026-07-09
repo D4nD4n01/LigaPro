@@ -1,0 +1,174 @@
+/* src/components/menu/Menu.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  background-color: #0e381c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease, padding 0.3s ease;
+  white-space: nowrap; /* Evita que el texto se rompa al colapsar */
+  overflow: hidden;
+}
+
+/* Estados del sidebar */
+.sidebar.open {
+  width: 280px;
+  padding: 20px;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 0;
+}
+
+.sidebar-content {
+  flex: 1; /* Toma todo el espacio disponible empujando el botón salir al fondo */
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+/* --- ACORDEÓN DE CATEGORÍAS --- */
+.role-section {
+  margin-bottom: 10px;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b5e20;
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #a5d6a7;
+  transition: background-color 0.2s;
+}
+
+.role-header:hover {
+  background-color: #2e7d32;
+}
+
+.role-items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 15px;
+  border-left: 2px solid #2e7d32;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.menu-btn {
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  background: transparent;
+  color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  margin-bottom: 2px;
+}
+
+.menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.menu-btn.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+/* --- BOTÓN DE SALIR DENTRO DEL MENÚ --- */
+.sidebar-footer {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+}
+
+.btn-logout-sidebar {
+  width: 100%;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn-logout-sidebar:hover {
+  background-color: #b71c1c;
+}
+
+/* --- ÁREA PRINCIPAL --- */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Previene desbordamientos */
+}
+
+.topbar {
+  background-color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.btn-toggle-menu {
+  background-color: #f4f7f6;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-toggle-menu:hover {
+  background-color: #e8f0eb;
+}
+
+.content-area {
+  padding: 30px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Placeholder */
+.view-placeholder {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.view-placeholder h3 { color: #2e7d32; font-size: 2rem; margin-bottom: 10px; }
