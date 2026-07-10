@@ -42,7 +42,7 @@ export default function Login({ onLogin, onNavigateToRegister }) {
       <div className="login-image-section">
         <img src={imagenesFutbol[imgIndex]} alt="Fútbol" className="login-image" />
         <div className="login-image-overlay">
-          <h2>LigaProWeb</h2>
+          <h2>Liga Pro</h2>
           <p>La mejor plataforma para gestionar tu pasión.</p>
         </div>
       </div>
