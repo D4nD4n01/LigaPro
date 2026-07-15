@@ -4,7 +4,7 @@ import { menuMock, nombresRoles } from '../../data';
 import './menu.css';
 
 const VistasComponentes = {
-    partidosPendientes: () => <div className="view-placeholder"><h3>Partidos Pendientes // este cambio se hizo ahorita</h3></div>,
+    partidosPendientes: () => <div className="view-placeholder"><h3>Partidos Pendientes</h3></div>,
     partidosJugados: () => <div className="view-placeholder"><h3>Partidos Jugados</h3></div>,
     estadisticas: () => <div className="view-placeholder"><h3>Estadísticas del Jugador</h3></div>,
     torneosOrg: () => <div className="view-placeholder"><h3>Gestión de Torneos</h3></div>,
