@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import { menuMock, nombresRoles } from '../../data';
 import './menu.css';
+import { Estadisticas } from '../jugador/estadisticas/Estadisticas';
 
 const VistasComponentes = {
     partidosPendientes: () => <div className="view-placeholder"><h3>Partidos Pendientes</h3></div>,
     partidosJugados: () => <div className="view-placeholder"><h3>Partidos Jugados</h3></div>,
-    estadisticas: () => <div className="view-placeholder"><h3>Estadísticas del Jugador</h3></div>,
+    estadisticas: () => <Estadisticas/>,
     torneosOrg: () => <div className="view-placeholder"><h3>Gestión de Torneos</h3></div>,
     pagos: () => <div className="view-placeholder"><h3>Control de Pagos</h3></div>,
     equipos: () => <div className="view-placeholder"><h3>Mis Equipos</h3></div>,

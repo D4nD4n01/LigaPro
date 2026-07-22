@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
 import Menu from './components/menu/Menu';
+import { eliminarIdUsuario } from './utils/cookies';
 
 function App() {
   // Estados para manejar la navegación simple
@@ -16,6 +17,7 @@ function App() {
   };
 
   const handleLogout = () => {
+    eliminarIdUsuario();
     setLoggedUser(null);
     setCurrentView('login');
   };

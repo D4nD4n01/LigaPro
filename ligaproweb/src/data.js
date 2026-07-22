@@ -26,3 +26,32 @@ export const nombresRoles = {
   2: "ORGANIZADOR",
   3: "ENTRENADOR"
 };
+
+export const stats = {
+  1:{
+    idJugador:1,
+    pieDerecho:9.1,
+    pieIzquierdo:7.8,
+    goles:4,
+    partidosJugados:2,
+    tarjetaAmarilla:1,
+    tarjetaRoja:0,
+    posicionPreferida:"Delantero",
+    edad:15,
+    numeroJugador:8,
+    equipo:"Los pingüinos emperador"
+  },
+  4:{
+    idJugador:4,
+    pieDerecho:7.1,
+    pieIzquierdo:8.9,
+    goles:7,
+    partidosJugados:3,
+    tarjetaAmarilla:2,
+    tarjetaRoja:1,
+    posicionPreferida:"MedioCampista Derecho",
+    edad:17,
+    numeroJugador:5,
+    equipo:"Tornado de fuego"
+  }
+}

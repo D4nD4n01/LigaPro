@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { usuariosMock } from '../../data';
+import { guardarIdUsuario } from '../../utils/cookies';
 import './login.css';
 
 const imagenesFutbol = [
@@ -31,6 +32,7 @@ export default function Login({ onLogin, onNavigateToRegister }) {
 
     if (userEncontrado) {
       toast.success(`¡Bienvenido, ${userEncontrado.usuario}!`);
+      guardarIdUsuario(userEncontrado.id);
       onLogin(userEncontrado);
     } else {
       toast.error('Credenciales incorrectas');
