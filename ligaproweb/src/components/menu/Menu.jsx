@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import { menuMock, nombresRoles } from '../../data';
 import './menu.css';
 import { Estadisticas } from '../jugador/estadisticas/Estadisticas';
+import { PartidosPendientes } from '../jugador/partidos/PartidosPendientes';
 
 const VistasComponentes = {
-    partidosPendientes: () => <div className="view-placeholder"><h3>Partidos Pendientes</h3></div>,
+    partidosPendientes: () => <PartidosPendientes/>,
     partidosJugados: () => <div className="view-placeholder"><h3>Partidos Jugados</h3></div>,
     estadisticas: () => <Estadisticas/>,
     torneosOrg: () => <div className="view-placeholder"><h3>Gestión de Torneos</h3></div>,
@@ -17,7 +18,7 @@ const VistasComponentes = {
 
 export default function Menu({ usuario, onLogout }) {
     const [vistaActual, setVistaActual] = useState(null);
-
+ 
     const [menuAbierto, setMenuAbierto] = useState(true);
 
     const [categoriaAbierta, setCategoriaAbierta] = useState(usuario.roles[0]);
