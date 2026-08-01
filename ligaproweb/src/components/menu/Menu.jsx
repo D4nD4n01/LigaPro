@@ -4,13 +4,15 @@ import { menuMock, nombresRoles } from '../../data';
 import './menu.css';
 import { Estadisticas } from '../jugador/estadisticas/Estadisticas';
 import { PartidosPendientes } from '../jugador/partidos/PartidosPendientes';
+import { Torneos } from '../organizador/Torneos';
+import { Pagos } from '../organizador/Pagos';
 
 const VistasComponentes = {
     partidosPendientes: () => <PartidosPendientes/>,
     partidosJugados: () => <div className="view-placeholder"><h3>Partidos Jugados</h3></div>,
     estadisticas: () => <Estadisticas/>,
-    torneosOrg: () => <div className="view-placeholder"><h3>Gestión de Torneos</h3></div>,
-    pagos: () => <div className="view-placeholder"><h3>Control de Pagos</h3></div>,
+    torneosOrg: () => <Torneos/>,
+    pagos: () => <Pagos/>,
     equipos: () => <div className="view-placeholder"><h3>Mis Equipos</h3></div>,
     jugadores: () => <div className="view-placeholder"><h3>Plantilla de Jugadores</h3></div>,
     torneosEnt: () => <div className="view-placeholder"><h3>Torneos Inscritos</h3></div>,
