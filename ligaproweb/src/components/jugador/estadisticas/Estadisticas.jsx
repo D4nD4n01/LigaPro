@@ -18,7 +18,7 @@ function Estadisticas() {
     }
 
     return (
-        <div className="stats-page">
+    <div className="stats-page">
 
     <div className="player-card">
 
