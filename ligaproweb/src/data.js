@@ -39,7 +39,8 @@ export const stats = {
     posicionPreferida:"Delantero",
     edad:15,
     numeroJugador:8,
-    equipo:"Los pingüinos emperador"
+    equipo:"Los pingüinos emperador",
+    idEquipo:1,
   },
   4:{
     idJugador:4,
@@ -52,6 +53,63 @@ export const stats = {
     posicionPreferida:"MedioCampista Derecho",
     edad:17,
     numeroJugador:5,
-    equipo:"Tornado de fuego"
+    equipo:"Tornado de fuego",
+    idEquipo:2
   }
 }
+
+export const partidosPendientes = [
+  {
+    idPartido: 1,
+    strFecha: "2026-08-15 10:00 AM",
+    strEquipo: "Los pingüinos emperador",
+    strEquipoRival: "Tornado de fuego",
+    strTorneo: "Copa Relámpago",
+    idTorneo: 1,
+    idEquipo: 1,
+    idEquipoRival: 2,
+    strLugarPartido: "Cancha Municipal Norte",
+    intNoCampo: 1,
+    idJugador: 1
+  },
+  {
+    idPartido: 1, 
+    strFecha: "2026-08-15 10:00 AM",
+    strEquipo: "Tornado de fuego",
+    strEquipoRival: "Los pingüinos emperador",
+    strTorneo: "Copa Relámpago",
+    idTorneo: 1,
+    idEquipo: 2,
+    idEquipoRival: 1,
+    strLugarPartido: "Cancha Municipal Norte",
+    intNoCampo: 1,
+    idJugador: 4
+  },
+
+  {
+    idPartido: 2,
+    strFecha: "2026-08-22 18:30 PM",
+    strEquipo: "Los pingüinos emperador",
+    strEquipoRival: "Tornado de fuego",
+    strTorneo: "Liga de Campeones Local",
+    idTorneo: 2,
+    idEquipo: 1,
+    idEquipoRival: 2,
+    strLugarPartido: "Deportivo Central",
+    intNoCampo: 3,
+    idJugador: 1
+  },
+  {
+    idPartido: 2, 
+    strFecha: "2026-08-22 18:30 PM",
+    strEquipo: "Tornado de fuego",
+    strEquipoRival: "Los pingüinos emperador",
+    strTorneo: "Liga de Campeones Local",
+    idTorneo: 2,
+    idEquipo: 2,
+    idEquipoRival: 1,
+    strLugarPartido: "Deportivo Central",
+    intNoCampo: 3,
+    idJugador: 4
+  }
+];
