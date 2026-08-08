@@ -113,3 +113,27 @@ export const partidosPendientes = [
     idJugador: 4
   }
 ];
+
+
+export const torneosOrganizador = [
+  {
+    idTorneo: 1,
+    strNombre: "Copa Relámpago",
+    strEstado: "EN_CURSO",
+    strFecha: "Empezó hace 12 días",
+    strLugar: "Cancha Municipal Norte",
+    intEquiposInscritos: 2,
+    intMaxEquipos: null,
+    idOrganizador:2
+  },
+  {
+    idTorneo: 2,
+    strNombre: "Liga de Campeones Local",
+    strEstado: "PROXIMO", 
+    strFecha: "Empieza el 15 Oct, 2026",
+    strLugar: "Deportivo Central",
+    intEquiposInscritos: 2,
+    intMaxEquipos: 12,
+    idOrganizador:2
+  }
+];
